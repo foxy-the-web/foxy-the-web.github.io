@@ -12,6 +12,7 @@
   z-index: 2;
 }
 
+.navigation .logo,
 .navigation .navigation-link,
 .navigation .navigation-title,
 .navigation .title {
@@ -20,6 +21,12 @@
   line-height: 5.2rem;
   padding: 0;
   text-decoration: none;
+}
+
+.navigation .logo {
+  height: 2rem;
+  position: relative;
+  top: 0.3rem;
 }
 
 .navigation .navigation-title,
@@ -40,6 +47,7 @@
   margin-bottom: 0;
   margin-left: 2.5rem;
   position: relative;
+  cursor: pointer;
 }
 
 .navigation .navigation-link,
@@ -95,6 +103,20 @@
   margin-bottom: 2.5rem;
 }
 
+.showcase-hero .competence {
+  text-align: left;
+}
+
+.showcase-hero .milestones td:first-child,
+th:first-child {
+  padding-left: 0px;
+  width: 11rem;
+}
+
 .footer {
   padding: 8rem 0 2rem;
+}
+
+.footer .nav .link {
+  cursor: pointer;
 }
