@@ -21,8 +21,10 @@
     <main class="wrapper">
       <nav class="navigation">
         <section class="container">
-          <img class="logo" src="./fk_logo.png">
-          <a class="navigation-title" href="#home" title="Friedrich Klimpel Architekt">Friedrich Klimpel Architekt</a>
+          <span id="logo">
+            <img class="logo" src="./fk_logo.png">
+            <a class="navigation-title" href="#home" title="Friedrich Klimpel Architekt">Friedrich Klimpel Architekt</a>
+          </span>
           <ul class="navigation-list float-right">
             <li class="navigation-item"><a href="#profile" class="navigation-link">Profil</a></li>
             <li class="navigation-item"><a href="#service" class="navigation-link">Leistungen</a></li>
@@ -30,111 +32,12 @@
           </ul>
         </section>
       </nav>
-      <div id="mainArea">
-        <header class="header" id="home">
-          <section class="container">
-            <h1 class="title">Friedrich Klimpel Architekt</h1>
-            <p class="description" data-version="Currently">Das Ganze ist mehr als die Summe seiner Teile <br><i><small>Aristoteles 384-322 v. Chr.</small></i></p>
-            <a class="button" href="#getting-started" title="Getting Started">Kontakt</a>
-          </section>
-        </header>
-        <section class="showcase-hero" id="profile">
-          <div class="container">
-            <h3 class="title">Profil</h3>
-            <p class="degree">Ing. M.A. Friedrich Klimpel</p>
-            <img class="image--portrait" src="./fk_portrait.jpg" alt="Friedrich Klimpel Architekt - Portrait">
-            <table class="milestones">
-              <thead>
-                <tr>
-                  <th>Jahr</th>
-                  <th>Beschreibung</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1982</td>
-                  <td>geboren in Greifswald</td>
-                </tr>
-                <tr>
-                  <td>2000 – 2003</td>
-                  <td>Fachgymnasium für Bautechnik Rostock</td>
-                </tr>
-                <tr>
-                  <td>2003 – 2004</td>
-                  <td>Zivildienst</td>
-                </tr>
-                <tr>
-                  <td>2004 – 2005</td>
-                  <td>Work & Travel Australien</td>
-                </tr>
-                <tr>
-                  <td>2005 – 2010</td>
-                  <td>Architekturstudium Fachhochschule Lübeck (Vertiefung: Bauen im Bestand)</td>
-                </tr>
-                <tr>
-                  <td>2011 – 2015</td>
-                  <td>Mitarbeiter bei Tilo Ries Architekt, Rostock (v.a. Neubau von Wohn-, Büro- und Ärztehäusern)</td>
-                </tr>
-                <tr>
-                  <td>2015 – 2016</td>
-                  <td>Bildungsreise durch Deutschland, Italien, Griechenland, Türkei und Schweiz</td>
-                </tr>
-                <tr>
-                  <td>2017 – 2020</td>
-                  <td>Mitarbeiter bei Charles de Picciotto Architekt BDA, Hamburg (v.a. Umbau und Sanierung von Bestandsgebäuden)</td>
-                </tr>
-                <tr>
-                  <td>2021</td>
-                  <td>Bürogründung in Hamburg</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="competence">
-              <h4 class="title">Kompetenzen</h3>
-              <dl>
-                <dt>Bearbeitung aller Leistungsphasen nach HOAI (Objektplanung LP 1-9) sowohl bei Neubauvorhaben als auch bei (denkmalgerechten)
-                  Umbau- und Sanierungsarbeiten am Gebäudebestand</dt>
-                <dt>Projektentwicklung (Bauvoranfragen, städtebauliche Entwürfe)</dt>
-                <dt>Teilnahme an Wettbewerben</dt>
-              </dl>
-            </div>
-          </div>
-        </section>
-        <section class="container" id="service">
-          <h3 class="title">Leistungen</h3>
-          <h4 class="title">Architektenleistungen nach §33/§34 HOAI, Leistungsphasen (LP) 1-9</h4>
-          <dl>
-            <dt>LP1 – Grundlagenermittlung</dt>
-            <dt>LP2 – Vorplanung (mit Kostenschätzung)</dt>
-            <dt>LP3 – Entwurfsplanung (mit Kostenberechnung)</dt>
-            <dt>LP4 – Genehmigungsplanung</dt>
-            <dt>LP5 – Ausführungsplanung (mit 1. Kostenanschlag)</dt>
-            <dt>LP6 – Vorbereitung der Vergabe (mit 2. Kostenanschlag/Kostenkontrolle) LP7 – Mitwirkung bei der Vergabe (mit 3. Kostenanschlag/Kostenkontrolle) LP8 – Objektüberwachung und Dokumentation (mit Kostenfeststellung) LP9 – Objektbetreuung</dt>
-          </dl>
-          <h4 class="title">Neubau</h4>
-          <p>bei Bedarf mit städtebaulichem Entwurf, Bauvoranfragen, Teilungsanträgen, Modellbau, Möbeldesign, Konzeption Haustechnik in Zusammenarbeit mit Firmen/Fachplanern/Gutachtern/Behörden</p>
-          <h4 class="title">Umbau und Sanierung</h4>
-          <p>bei Bedarf in Zusammenarbeit mit Firmen/Fachplanern/Gutachtern/Behörden</p>
-          <h4 class="title">Projektmanagement (Termine, Kosten, Qualität, AVA)</h4>
-          <p>entsprechend §33/34 HOAI, LP 1-9</p>
-        </section>
-        <section class="container" id="contact">
-          <h3 class="title">Kontakt</h3>
-          <dl>
-            <dt>Friedrich Klimpel Architekt</dt>
-            <dt>Greifswalder Str. 43</dt>
-            <dt>20099 Hamburg</dt>
-            <dt>Telefon: 040/26105564</dt>
-            <dt>Mobil: 0151/74407568</dt>
-            <dt>E-Mail: klimpel@fk-architekt.de</dt>
-          </dl>
-        </section>
-      </div>
+      <div id="mainArea"></div>
       <footer class="footer">
         <section class="container">
           <nav class="nav">
             <a class="link" id="disclaimer" title="Impressum">Impressum</a>
-            <a class="link" href="" title="Datenschutzerklärung">Datenschutzerklärung</a>
+            <a class="link" id="privacyPolicy" title="Datenschutzerklärung">Datenschutzerklärung</a>
           </nav>
         </section>
       </footer>

@@ -120,3 +120,7 @@ th:first-child {
 .footer .nav .link {
   cursor: pointer;
 }
+
+.additional-information {
+  padding-top: 13rem;
+}
