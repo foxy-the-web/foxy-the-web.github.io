@@ -1,7 +1,8 @@
 node_modules/
 src/
+scss/
+css/
 
 app.js
-Gruntfile.js
 package-lock.json
 package.json
