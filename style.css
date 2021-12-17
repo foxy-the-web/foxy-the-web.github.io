@@ -1,3 +1,42 @@
+.footer {
+  padding: 8rem 0 2rem;
+}
+.footer .nav .link {
+  cursor: pointer;
+}
+
+.wrapper .container {
+  max-width: 80rem;
+}
+.wrapper > .container {
+  padding-bottom: 7.5rem;
+  padding-top: 7.5rem;
+}
+
+.header {
+  padding-top: 5rem;
+  background-color: #f4f5f6;
+  padding-top: 1rem;
+  background-size: cover;
+}
+.header .container {
+  border-top: 0;
+  padding-bottom: 7.5rem;
+  padding-top: 7.5rem;
+  position: relative;
+  text-align: left;
+}
+.header + section {
+  border-top: 0;
+}
+.header small {
+  font-size: 40%;
+}
+.header h1 {
+  padding: 3rem 0rem 2rem;
+  font-size: 5.6rem;
+}
+
 .navigation {
   background: #f4f5f6;
   border-bottom: 0.1rem solid #d1d1d1;
@@ -11,32 +50,26 @@
   width: 100%;
   z-index: 2;
 }
-
 .navigation .logo,
 .navigation .navigation-link,
-.navigation .navigation-title,
-.navigation .title {
+.navigation .navigation-title {
   display: inline;
   font-size: 1.6rem;
   line-height: 5.2rem;
   padding: 0;
   text-decoration: none;
 }
-
 .navigation .logo {
   height: 2rem;
   position: relative;
   top: 0.3rem;
 }
-
 .navigation .navigation-title,
 .navigation .title {
   color: #606c76;
-  font-family: Gotham Rounded A, Gotham Rounded B, Helvetica Neue, Arial,
-    sans-serif;
+  font-family: Gotham Rounded A, Gotham Rounded B, Helvetica Neue, Arial, sans-serif;
   position: relative;
 }
-
 .navigation .navigation-list {
   list-style: none;
   margin-bottom: 0;
@@ -49,7 +82,6 @@
   position: relative;
   cursor: pointer;
 }
-
 .navigation .navigation-link,
 .navigation .navigation-title,
 .navigation .title {
@@ -59,68 +91,22 @@
   padding: 0;
   text-decoration: none;
 }
-
-.header {
-  padding-top: 5rem;
-}
-.header {
-  background-color: #f4f5f6;
-  padding-top: 1rem;
+.navigation a {
+  color: #dd0000;
 }
 
-.header .container {
-  border-top: 0;
-  padding-bottom: 7.5rem;
-  padding-top: 7.5rem;
-  position: relative;
-  text-align: center;
-}
-
-.wrapper > .container {
-  padding-bottom: 7.5rem;
-  padding-top: 7.5rem;
-}
-.wrapper .container {
-  max-width: 80rem;
-}
-
-.header + section {
-  border-top: 0;
-}
-.showcase-hero,
-.showcase-share {
-  text-align: center;
-}
-.showcase-hero {
-  border-bottom: 0.1rem solid #f4f5f6;
+.profile-hero {
   max-width: 100%;
   padding-bottom: 7.5rem;
   padding-top: 7.5rem;
   width: 100%;
+  text-align: center;
 }
-
-.showcase-hero img {
+.profile-hero img {
   margin-bottom: 2.5rem;
 }
-
-.showcase-hero .competence {
-  text-align: left;
-}
-
-.showcase-hero .milestones td:first-child,
-th:first-child {
+.profile-hero .milestones td:first-child,
+.profile-hero th:first-child {
   padding-left: 0px;
   width: 11rem;
-}
-
-.footer {
-  padding: 8rem 0 2rem;
-}
-
-.footer .nav .link {
-  cursor: pointer;
-}
-
-.additional-information {
-  padding-top: 13rem;
 }
