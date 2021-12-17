@@ -5,6 +5,16 @@
   cursor: pointer;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+}
+
 .wrapper .container {
   max-width: 80rem;
 }
@@ -13,16 +23,19 @@
   padding-top: 7.5rem;
 }
 
+.main .container {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .header {
   padding-top: 5rem;
   background-color: #f4f5f6;
-  padding-top: 1rem;
-  background-size: cover;
 }
 .header .container {
   border-top: 0;
-  padding-bottom: 7.5rem;
   padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
   position: relative;
   text-align: left;
 }
@@ -30,10 +43,12 @@
   border-top: 0;
 }
 .header small {
-  font-size: 40%;
+  font-size: 30%;
+  font-family: "Roboto" sans-serif;
+  font-weight: 100;
 }
 .header h1 {
-  padding: 3rem 0rem 2rem;
+  padding: 3rem 0rem 0rem;
   font-size: 5.6rem;
 }
 
@@ -97,10 +112,8 @@
 
 .profile-hero {
   max-width: 100%;
-  padding-bottom: 7.5rem;
-  padding-top: 7.5rem;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 .profile-hero img {
   margin-bottom: 2.5rem;

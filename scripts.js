@@ -4,6 +4,7 @@ const base = './HTMLcomponents/';
 // define relevant page elements
 const elements = [
   'home',
+  'philosophy',
   'profile',
   'service',
   'contact',
@@ -39,7 +40,7 @@ const intialize = async () => {
   let combinedNodes = '';
 
   // create main content
-  for ( i = 0; i < 4; i++ ) {
+  for ( i = 0; i < 5; i++ ) {
     
     // get all relevant nodes for all
     let key = elements[i];
