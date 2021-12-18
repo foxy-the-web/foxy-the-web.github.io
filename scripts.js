@@ -28,6 +28,29 @@ const loadHtml = async (file) => {
   } 
 }
 
+// switch view between header and footer navigation
+const switchView = async () => {
+
+   // get navigation elements
+  const navi = {
+    main: document.getElementById("mainNavi"),
+    footer: document.getElementById("footerNavi")
+  }
+
+  // add event listners
+  navi.main.addEventListener('click', () => {
+    additionalArea.classList.add('hide');
+    mainArea.classList.remove('hide');
+  });
+
+  navi.footer.addEventListener('click', () => {
+    mainArea.classList.add('hide');
+    additionalArea.classList.remove('hide');
+  });
+
+}
+
+// create structure
 const intialize = async () => {
 
   // get all html files and its content
@@ -37,40 +60,29 @@ const intialize = async () => {
 
   // find main
   const mainArea = document.getElementById("mainArea");
-  let combinedNodes = '';
+  const additionalArea = document.getElementById("additionalArea");
+
+  let mainNodes = '';
+  let additionalNodes = '';
 
   // create main content
-  for ( i = 0; i < 5; i++ ) {
-    
-    // get all relevant nodes for all
-    let key = elements[i];
-    combinedNodes = combinedNodes + html[key];
+  for ( element of elements ) {
+
+    // cases for main and additional
+    if ( !(element == 'disclaimer' || element == 'privacyPolicy' ) ) {
+      mainNodes = mainNodes + html[element];
+    }
+    else {
+      additionalNodes = additionalNodes + html[element]
+    }
+
   }
 
-  mainArea.innerHTML = combinedNodes;
+  mainArea.innerHTML = mainNodes;
+  additionalArea.innerHTML = additionalNodes;
+
+  switchView();
   
 }
-
-// inner html 
-const createHTML = async (file) => {
-
-  loadHtml(file)
-    .then( html => {
-      console.log(`Loaded: ${file}`)
-      mainArea.innerHTML = html 
-    })
-    .catch(console.error);
-}
-
-/*
-
-const disclaimer = document.getElementById("disclaimer");
-const privacyPolicy = document.getElementById("privacyPolicy");
-const logo = document.getElementById("logo");
-
-disclaimer.addEventListener('click', () => createHTML('impressum.html'), { once: true });
-privacyPolicy.addEventListener('click', () => createHTML('datenschutz.html'), { once: true });
-logo.addEventListener('click', (e) => console.log(e));
-*/
 
 intialize();

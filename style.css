@@ -15,6 +15,10 @@ h6 {
   font-weight: 700;
 }
 
+a {
+  color: #dd0000;
+}
+
 .wrapper .container {
   max-width: 80rem;
 }
@@ -23,9 +27,17 @@ h6 {
   padding-top: 7.5rem;
 }
 
-.main .container {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+.main .container,
+.additional .container {
+  padding-top: 6rem;
+}
+
+.additional {
+  padding-top: 3rem;
+}
+
+.hide {
+  display: none;
 }
 
 .header {
@@ -105,9 +117,6 @@ h6 {
   line-height: 5.2rem;
   padding: 0;
   text-decoration: none;
-}
-.navigation a {
-  color: #dd0000;
 }
 
 .profile-hero {
